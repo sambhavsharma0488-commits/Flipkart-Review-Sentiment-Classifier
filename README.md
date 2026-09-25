@@ -11,8 +11,8 @@ Fine-tuned a pretrained transformer model to classify Flipkart product reviews i
 ## Pipeline
 
 1. **`1_Pseudo_review_generater`** — Sampled 5,000 reviews, generated pseudo-labels using the pretrained base model.
-2. **Manual fact-checking** — Verified all 5,000 pseudo-labeled rows by hand (corrected ~11 rows).
-3. **`2_Fine_tuning_model`** — Fine-tuned the base model on the 5,000 fact-checked rows (80/20 train/test split, 2 epochs).
+2. **Manual fact-checking** — Verified all 5,000 pseudo-labeled rows by hand
+3. **`2_Fine_tuning_model`** — Fine-tuned the base model on the 5,000 fact-checked rows .
 4. **`3_sentimental_classification`** — Used the fine-tuned model to classify the full ~205k row dataset.
 
 ## Results
